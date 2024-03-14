@@ -6,6 +6,7 @@ function App() {
   const [countDown, changeCountDown] = useState(100);
   const [inputValue, changeInputValue] = useState("");
   const [skills, changeSkills] = useState(["react", "javascript", "css"]);
+  let [Counter, setCounter] = useState;
 
 // let state = useState(0);
 // let counter = state[0];
@@ -51,7 +52,7 @@ const add = () => {
       <button onClick={onChangeCounter}>VALIDER UNE COMPETENCE</button>
       <p>Compte à rebour: <span>{countDown}</span></p>
       <button onClick={onCountDown}>REDUIRE LE COMPTE A REBOUR</button>
-      <AppCounter/>
+      <AppCounter counter = {Counter} click = {setCounter}/>
       <AppCounter/>
     </>
   );
